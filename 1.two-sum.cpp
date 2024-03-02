@@ -24,8 +24,7 @@ public:
             if (map.count(nums[i])){
                 map[nums[i]].push_back(i);
             } else {
-                vector<int> toPush = {i};
-                map[nums[i]] = toPush;
+                map[nums[i]] = {i};
             }
         }
         for (int i = 0; i < nums.size(); i++){
